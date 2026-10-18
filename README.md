@@ -4,7 +4,11 @@ Compara duas versões da tabela de preços de um fornecedor e mostra o que mudou
 
 > Versão 1 (protótipo). Todos os dados do repositório são fictícios.
 
-<!-- COLE AQUI O GIF OU VÍDEO... -->
+
+
+https://github.com/user-attachments/assets/dfe0ae77-5000-4afe-9b42-edcd51e69939
+
+
 
 **Demo online**: https://auditor-tabelas-precos.streamlit.app/
 
