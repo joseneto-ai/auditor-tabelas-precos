@@ -6,7 +6,7 @@ Compara duas versões da tabela de preços de um fornecedor e mostra o que mudou
 
 <!-- COLE AQUI O GIF OU VÍDEO DE DEMONSTRAÇÃO (30 a 60 segundos) -->
 
-**Demo online:** [COLE AQUI O LINK DA DEMO, SE PUBLICAR]
+
 
 ## O problema
 
