@@ -4,9 +4,9 @@ Compara duas versões da tabela de preços de um fornecedor e mostra o que mudou
 
 > Versão 1 (protótipo). Todos os dados do repositório são fictícios.
 
-<!-- COLE AQUI O GIF OU VÍDEO DE DEMONSTRAÇÃO (30 a 60 segundos) -->
+<!-- COLE AQUI O GIF OU VÍDEO... -->
 
-
+**Demo online**: https://auditor-tabelas-precos.streamlit.app/
 
 ## O problema
 
