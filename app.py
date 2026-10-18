@@ -1,5 +1,6 @@
 """Interface do Auditor de Tabelas de Preços (Streamlit)."""
 from decimal import Decimal
+from pathlib import Path
 
 import streamlit as st
 
@@ -16,6 +17,21 @@ from comparador.relatorio import (
 st.set_page_config(page_title="Auditor de Tabelas de Preços", layout="wide")
 st.title("Auditor de Tabelas de Preços")
 st.caption("Versão 1 (protótipo) · use apenas dados fictícios ou autorizados.")
+
+PASTA_DADOS = Path(__file__).parent / "dados"
+TIPO_XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+with st.expander("Não tem planilhas? Baixe exemplos fictícios para testar"):
+    for nome_arquivo in ["tabela_anterior.xlsx", "tabela_nova.xlsx"]:
+        caminho = PASTA_DADOS / nome_arquivo
+        if caminho.exists():
+            st.download_button(
+                f"Baixar {nome_arquivo}",
+                data=caminho.read_bytes(),
+                file_name=nome_arquivo,
+                mime=TIPO_XLSX,
+                key=f"exemplo_{nome_arquivo}",
+            )
 
 coluna_a, coluna_b = st.columns(2)
 arquivo_antigo = coluna_a.file_uploader("Tabela anterior (.xlsx)", type=["xlsx"])
@@ -53,7 +69,7 @@ if arquivo_antigo and arquivo_novo:
         "Baixar relatório em Excel",
         data=gerar_excel(resultado, limite_alerta),
         file_name="relatorio_comparacao.xlsx",
-        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        mime=TIPO_XLSX,
     )
 else:
     st.info("Envie as duas planilhas para começar. Colunas: codigo, descricao, unidade, preco.")
