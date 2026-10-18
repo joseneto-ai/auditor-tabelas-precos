@@ -4,13 +4,10 @@ Compara duas versões da tabela de preços de um fornecedor e mostra o que mudou
 
 > Versão 1 (protótipo). Todos os dados do repositório são fictícios.
 
-
+**Demo online**: https://auditor-tabelas-precos.streamlit.app/
 
 https://github.com/user-attachments/assets/dfe0ae77-5000-4afe-9b42-edcd51e69939
 
-
-
-**Demo online**: https://auditor-tabelas-precos.streamlit.app/
 
 ## O problema
 
@@ -24,6 +21,7 @@ Quando o fornecedor envia uma tabela nova, descobrir o que mudou dá trabalho. O
 - Separa os casos de que não tem certeza para uma pessoa conferir, em vez de assumir.
 - Lista os itens novos e os descontinuados.
 - Gera um relatório em Excel com 5 abas: Resumo, Comparados, Revisar, Novos e Descontinuados.
+- A demo online tem um botão para baixar planilhas de exemplo fictícias.
 
 ## Resultado com os dados fictícios
 
@@ -115,7 +113,7 @@ tests/                       testes automáticos (pytest)
 - Banco de dados PostgreSQL com histórico das comparações.
 - Interface em HTML e JavaScript consumindo a API.
 - Login e separação de dados por empresa.
-- Deploy.
+- Deploy da API e do banco de dados (a demo atual hospeda só a interface Streamlit).
 
 ## Autoria e uso de IA
 
