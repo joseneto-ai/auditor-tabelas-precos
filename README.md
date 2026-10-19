@@ -115,9 +115,6 @@ tests/                       testes automáticos (pytest)
 - Login e separação de dados por empresa.
 - Deploy da API e do banco de dados (a demo atual hospeda só a interface Streamlit).
 
-## Autoria e uso de IA
-
-Projeto desenvolvido por José Neto como estudo de Python aplicado (módulos, exceções, tipos e testes). Parte do código e da documentação foi feita com apoio de IA (Claude). Eu li, executei e testei o resultado, e escrevi os testes com ele.
 
 ## Aviso
 
